@@ -1,3 +1,7 @@
+/**
+ * PokemonPuzzel Java code voor Kahoot! Week 4 objecten
+ */
+
 public class PokemonPuzzel {
 
     public static void main(String[] args) {

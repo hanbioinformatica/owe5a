@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/owe5a.iml" filepath="$PROJECT_DIR$/.idea/owe5a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wk5_inheritance/wk5_inheritance.iml" filepath="$PROJECT_DIR$/wk5_inheritance/wk5_inheritance.iml" />
+    </modules>
+  </component>
+</project>

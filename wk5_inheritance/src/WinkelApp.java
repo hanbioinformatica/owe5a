@@ -12,7 +12,7 @@ public class WinkelApp {
 }
 
 
-class Product {
+final class Product {
 
     private float prijs;
     protected String naam;
@@ -32,33 +32,35 @@ class Product {
         }
     }
 
-    public String toString() {
-        return "Propduct *" + naam + "* prijs: " + prijs;
+    public String toString(){
+        return super.toString()+" Product "+this.naam+" met prijs "+this.prijs;
     }
+
 }
 
 class Boek extends Product {
 
+    private int bladzijden;
     public Boek(String naam, int bladzijden) {
         super.naam = naam;
         this.bladzijden = bladzijden;
     }
 
-    private int bladzijden;
+    public String toString(){
+        return super.toString()+"Ik ben een boek "+naam;
+    }
+
+
 }
 
 class Laptop extends Product {
+    private boolean HDD;
 
     public Laptop(String naam, boolean HDD) {
         super.naam = naam;
         this.HDD = HDD;
     }
 
-    public String toString(){
-        return super.toString()+"Ik ben een laptop";
 
-    }
-
-    private boolean HDD;
 }
 

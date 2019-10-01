@@ -12,7 +12,7 @@ public class WinkelApp {
 }
 
 
-final class Product {
+class Product {
 
     private float prijs;
     protected String naam;

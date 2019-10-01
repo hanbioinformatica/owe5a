@@ -2,26 +2,26 @@
  * Paard class
  *
  * @author Martijn van der Bruggen
- * (c) Hogeschool van Arnhem en Nijmegen
  * @version alpha release
+ * (c) Hogeschool van Arnhem en Nijmegen
  */
 
-import java.awt.*;
 import java.util.Random;
 
 public class Paard {
 
-    private static int aantal = 0;  //totaal aantal paarden
-    Random random = new Random();
-    private int x, paardNummer; //te lezen als x en y positie
-    private String naam;  //naam van het paard
-    private Color kleur;  //kleur van de streep/paard
+    Random random = new Random();   // Instance voor willekeurig getal
+    private static int aantal = 0;  // totaal aantal paarden
+    private int x, paardNummer;     // te lezen als x en y positie
+    private String naam;            // naam van het paard
+    private Color kleur;            // kleur van de streep/paard
     private Image plaatje;
 
 
     /**
      * Constructor voor Paard, overloaded en zonder images
      * en een default kleur
+     * @param naam van het paard
      */
     Paard(String naam) {
         this.naam = naam;
@@ -30,21 +30,34 @@ public class Paard {
         this.paardNummer = ++aantal;
     }
 
-    /* Constructor voor Paard overloaded*/
+    /**
+     * @param kleur de kleur afkomstig uit de Class Color
+     * @param naam van het paard
+     * @param plaatje image voor een paard van de Class Image
+     * Constructor voor Paard overloaded*/
     Paard(String naam, Color kleur, Image plaatje) {
         this(naam);
         this.kleur = kleur;
         this.plaatje = plaatje;
     }
 
+    /**
+     * @return naam van het paard opgegeven bij constructie
+     */
     public String getNaam() {
         return this.naam;
     }
 
+    /**
+     * @return afgelegde afstand in pixels
+     */
     public int getAfstand() {
         return this.x;
     }
 
+    /**
+     * @return nummer van het paard
+     */
     public int getPaardNummer() {
         return this.paardNummer;
     }

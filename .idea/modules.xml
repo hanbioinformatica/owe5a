@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/owe5a.iml" filepath="$PROJECT_DIR$/owe5a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/wk1_java.iml" filepath="$PROJECT_DIR$/src/wk1_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wk2_variabelen/wk2_variabelen.iml" filepath="$PROJECT_DIR$/wk2_variabelen/wk2_variabelen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wk3_ConditioneleIteratieveControle/wk3_ConditioneleIteratieveControle.iml" filepath="$PROJECT_DIR$/wk3_ConditioneleIteratieveControle/wk3_ConditioneleIteratieveControle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wk4_Pokemon/wk4_Pokemon.iml" filepath="$PROJECT_DIR$/wk4_Pokemon/wk4_Pokemon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wk4_PokemonPuzzel/wk4_PokemonPuzzel.iml" filepath="$PROJECT_DIR$/wk4_PokemonPuzzel/wk4_PokemonPuzzel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wk5_Exceptions/wk5_Exceptions.iml" filepath="$PROJECT_DIR$/wk5_Exceptions/wk5_Exceptions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wk5_Inheritance/wk5_Inheritance.iml" filepath="$PROJECT_DIR$/wk5_Inheritance/wk5_Inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wk5_Voertuigen/wk5_Voertuigen.iml" filepath="$PROJECT_DIR$/wk5_Voertuigen/wk5_Voertuigen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wk6_Enumeration/wk6_Enumeration.iml" filepath="$PROJECT_DIR$/wk6_Enumeration/wk6_Enumeration.iml" />
+    </modules>
+  </component>
+</project>

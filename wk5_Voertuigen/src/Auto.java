@@ -11,9 +11,9 @@ public class Auto extends Voertuig {
         this.kenteken = kenteken;
     }
 
-    public String toString() {
-        return "Ik ben een auto " + kenteken + " met een snelheid van " + getSnelheid();
-    }
+    //public String toString() {
+      //  return "Ik ben een auto " + kenteken + " met een snelheid van " + getSnelheid();
+    //}
 
     @Override
     public void setSnelheid(int snelheid) {

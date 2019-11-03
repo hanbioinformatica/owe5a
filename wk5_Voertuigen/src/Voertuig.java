@@ -1,4 +1,4 @@
-public abstract class Voertuig {
+public abstract class Voertuig extends Object {
 
     private static int maxSnelheid = 100;
     private int snelheid = 0;

@@ -54,6 +54,7 @@ public class FileChooserDemo extends JFrame
 
         textArea = new JTextArea();
         textArea.setPreferredSize(new Dimension(200,200));
+
         window.add(textArea);
     }
 

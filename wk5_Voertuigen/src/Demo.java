@@ -3,6 +3,9 @@ public class Demo {
 
     public static void main(String[] args) {
         System.out.print(getal);
+
+        Auto a1 = new Auto();
+
     }
 
 }

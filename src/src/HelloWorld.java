@@ -1,6 +1,8 @@
 public class HelloWorld {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        String s1 = "ATGGAGCACCATGGA";
+        boolean b = s1.matches("[ATGC]*");
+        System.out.println(b);
     }
 }

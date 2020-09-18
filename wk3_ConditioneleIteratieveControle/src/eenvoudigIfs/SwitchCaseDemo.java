@@ -1,6 +1,6 @@
 package eenvoudigIfs;
 
-public class StartIf {
+public class SwitchCaseDemo {
 
     public static void main(String[] args) {
         int i = 7;

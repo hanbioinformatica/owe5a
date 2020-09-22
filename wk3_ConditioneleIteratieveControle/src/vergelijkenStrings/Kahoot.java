@@ -8,18 +8,18 @@ public class Kahoot {
         }
         System.out.println(i);
 
-        int a = 10;
-        System.out.println((a>5)?"Hello":"World");
-
-        int b = (5>4)?6:7;
-
-        System.out.println(b);
-        i=10;
-        do {
-            i--;
-            System.out.println(i);
-        } while (i>=0);
-
+//        int a = 10;
+//        System.out.println(a>5?"Hello":"World");
+//
+//        int b = (5>4)?6:7;
+//
+//        System.out.println(b);
+//        i=10;
+//        do {
+//            i--;
+//            System.out.println(i);
+//        } while (i>=0);
+//
 
 
 //        System.out.println(++i);

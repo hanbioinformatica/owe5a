@@ -1,4 +1,4 @@
-package eenvoudigIfs;
+package SwitchCase;
 
 public class SwitchCaseDemo {
 

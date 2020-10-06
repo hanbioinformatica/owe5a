@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MijnGUI">
+  <grid id="27dc6" binding="MijnPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <foreground color="-11683045"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="119e4" class="javax.swing.JButton" binding="klikButton" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="Klik"/>
+        </properties>
+      </component>
+      <component id="9c34f" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+        <constraints/>
+        <properties>
+          <columns value="20"/>
+          <font name="Comic Sans MS" size="14"/>
+        </properties>
+      </component>
+      <component id="a107a" class="javax.swing.JButton" binding="button1" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="Button"/>
+        </properties>
+      </component>
+      <component id="bf723" class="javax.swing.JButton" binding="button2" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="Button"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

@@ -13,18 +13,19 @@ public class PokemonPuzzel {
         System.out.println(" 2." + p1.getNaam());
         System.out.println(" 3." + p2.getAttack());
         String s1 = new String("Charizard");
-        System.out.println(" 4." + (p2.getNaam() == s1));
+        System.out.println(" 4." + (p3.getNaam() == s1));
         System.out.println(" 5." + (p2.getAttack() == p3.getAttack()));
         Pokemon p5 = p1;
         System.out.println(" 6." + (p1 == p5));
         System.out.println(" 7." + p4.getNaam());
         p4.setNaam("Sandslash");
         System.out.println(" 8." + p4.getNaam());
-        for (int i = 0; i < 10; i++) {
-            new Pokemon();
+        for (int i = 0; i < 7; i++) {
+            p1 = new Pokemon();
         }
         System.out.println(" 9." + Pokemon.aantal);
         System.out.println("10." + p5.getId());
+
     }
 }
 

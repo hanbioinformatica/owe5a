@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/GUImodule/GUImodule.iml" filepath="$PROJECT_DIR$/GUImodule/GUImodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NogEenGUI/NogEenGUI.iml" filepath="$PROJECT_DIR$/NogEenGUI/NogEenGUI.iml" />
       <module fileurl="file://$PROJECT_DIR$/owe5a.iml" filepath="$PROJECT_DIR$/owe5a.iml" />
       <module fileurl="file://$PROJECT_DIR$/wk2_variabelen/wk2_variabelen.iml" filepath="$PROJECT_DIR$/wk2_variabelen/wk2_variabelen.iml" />
       <module fileurl="file://$PROJECT_DIR$/wk3_ConditioneleIteratieveControle/wk3_ConditioneleIteratieveControle.iml" filepath="$PROJECT_DIR$/wk3_ConditioneleIteratieveControle/wk3_ConditioneleIteratieveControle.iml" />

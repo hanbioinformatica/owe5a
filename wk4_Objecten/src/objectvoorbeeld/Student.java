@@ -4,8 +4,9 @@ public class Student {
 
     private String naam;  //instance var
     private int leeftijd; //instance var
-    static int minLeeftijd = 16; //class var
+    static int minLeeftijd = 18; //class var - om bier te mogen drinken
 
+    //Constructor
     public Student(String naam, int leeftijd) {  // constructor - initalisator van een object
         this.naam = naam;
         this.leeftijd = leeftijd;
@@ -24,12 +25,19 @@ public class Student {
     }
 
     public void setLeeftijd (int lt){
-        if (lt>minLeeftijd&&lt<45) {
+        if (lt<45) {
             leeftijd=lt;
         } else {
             System.out.println("Leeftijd past niet bij een student");
         }
     }
 
+    public boolean magBierDrinken(){
+        return leeftijd>=minLeeftijd;
+    }
+
+    public String toString(){
+        return "Naam "+naam+" is "+leeftijd+" mag bier drinken "+magBierDrinken();
+    }
 
 }

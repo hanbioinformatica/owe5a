@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class VoertuigApp {
 
 
@@ -9,5 +11,8 @@ public class VoertuigApp {
         f1.setSnelheid(80);
         System.out.println(f1.getSnelheid());
         f1.getSnelheid();
+
+   
+
     }
 }

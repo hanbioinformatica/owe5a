@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Bi5a-K_2019/Bi5a-K_2019.iml" filepath="$PROJECT_DIR$/Bi5a-K_2019/Bi5a-K_2019.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DemoFileReader/DemoFileReader.iml" filepath="$PROJECT_DIR$/DemoFileReader/DemoFileReader.iml" />
       <module fileurl="file://$PROJECT_DIR$/GUImodule/GUImodule.iml" filepath="$PROJECT_DIR$/GUImodule/GUImodule.iml" />
       <module fileurl="file://$PROJECT_DIR$/NogEenGUI/NogEenGUI.iml" filepath="$PROJECT_DIR$/NogEenGUI/NogEenGUI.iml" />
       <module fileurl="file://$PROJECT_DIR$/owe5a.iml" filepath="$PROJECT_DIR$/owe5a.iml" />

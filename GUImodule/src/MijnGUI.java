@@ -1,48 +1,58 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.*;
 
 public class MijnGUI {
     private JPanel MijnPanel;
     private JButton klikButton;
     private JTextField textField1;
     private JButton button1;
+    private JTextArea textArea1;
     private JButton button2;
+
 
     public MijnGUI() {
         klikButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                textField1.setText("Hello World");
-            }
-        });
-        klikButton.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseEntered(MouseEvent e) {
-                klikButton.setBackground(Color.GREEN);
-                super.mouseEntered(e);
-            }
+                File selectedFile;
+                JFileChooser fileChooser = new JFileChooser();
+                int reply = fileChooser.showOpenDialog(null);
+                if (reply == JFileChooser.APPROVE_OPTION) {
+                    selectedFile = fileChooser.getSelectedFile();
+                    textField1.setText(selectedFile.getAbsolutePath());
 
-            @Override
-            public void mouseExited(MouseEvent e) {
-                klikButton.setBackground(Color.BLUE);
-                super.mouseExited(e);
+                }
+
             }
         });
         button1.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             *
+             * @param e the event to be processed
+             */
             @Override
             public void actionPerformed(ActionEvent e) {
-                textField1.setText("Dit is een andere button");
-                textField1.setBackground(Color.CYAN);
+                readFile();
             }
         });
-        button2.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                textField1.setText("rejhwrewtejhbget");
-                textField1.setCaretColor(Color.RED);
+    }
+
+    private void readFile(){
+        String line;
+        try {
+            BufferedReader inFile = new BufferedReader(new FileReader(textField1.getText()));
+            while ((line = inFile.readLine()) != null) {
+                textArea1.append(line + "\n");
             }
-        });
+            inFile.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void main(String[] args) {

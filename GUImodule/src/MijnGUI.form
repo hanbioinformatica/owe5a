@@ -30,12 +30,21 @@
           <text value="Read File"/>
         </properties>
       </component>
-      <component id="54fe" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
+      <scrollpane id="5d966">
         <constraints/>
-        <properties>
-          <preferredSize width="450" height="400"/>
-        </properties>
-      </component>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="54fe" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
+            <constraints/>
+            <properties>
+              <font/>
+              <lineWrap value="true"/>
+              <preferredSize width="450" height="400"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
     </children>
   </grid>
 </form>

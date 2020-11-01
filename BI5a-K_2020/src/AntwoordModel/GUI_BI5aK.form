@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="AntwoordModel.GUI_BI5aK">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+    <constraints>
+      <xy x="20" y="20" width="462" height="600"/>
+    </constraints>
+    <properties>
+      <minimumSize width="462" height="600"/>
+    </properties>
+    <border type="none" title="Bi5a-K">
+      <font/>
+    </border>
+    <children>
+      <component id="e6111" class="javax.swing.JLabel">
+        <constraints/>
+        <properties>
+          <text value="Voornaam"/>
+        </properties>
+      </component>
+      <component id="355b5" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+        <constraints/>
+        <properties>
+          <preferredSize width="100" height="30"/>
+        </properties>
+      </component>
+      <component id="bd530" class="javax.swing.JLabel">
+        <constraints/>
+        <properties>
+          <text value="Leeftijd"/>
+        </properties>
+      </component>
+      <component id="9207d" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+        <constraints/>
+        <properties>
+          <preferredSize width="100" height="30"/>
+        </properties>
+      </component>
+      <component id="64f74" class="javax.swing.JLabel">
+        <constraints/>
+        <properties>
+          <text value="Studentnummer"/>
+        </properties>
+      </component>
+      <component id="3c0b2" class="javax.swing.JTextField" binding="textField3" default-binding="true">
+        <constraints/>
+        <properties>
+          <preferredSize width="100" height="30"/>
+        </properties>
+      </component>
+      <component id="6b577" class="javax.swing.JButton" binding="runButton" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="Check"/>
+        </properties>
+      </component>
+      <component id="a5468" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
+        <constraints/>
+        <properties>
+          <preferredSize width="200" height="425"/>
+          <requestFocusEnabled value="true"/>
+          <rows value="25"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

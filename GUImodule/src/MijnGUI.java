@@ -22,7 +22,9 @@ public class MijnGUI {
                 if (reply == JFileChooser.APPROVE_OPTION) {
                     selectedFile = fileChooser.getSelectedFile();
                     textField1.setText(selectedFile.getAbsolutePath());
-
+                } else {
+                    textField1.setText("No file selected");
+                    textField1.setBackground(Color.RED);
                 }
 
             }
@@ -56,10 +58,26 @@ public class MijnGUI {
     }
 
     public static void main(String[] args) {
+        try {
+            //UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
+            UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
+            //UIManager.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
+            //UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+        } catch (UnsupportedLookAndFeelException e) {
+            // handle exception
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
         JFrame frame = new JFrame("MijnGUI");
         frame.setContentPane(new MijnGUI().MijnPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+
+
     }
 }

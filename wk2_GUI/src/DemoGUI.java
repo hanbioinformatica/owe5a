@@ -33,15 +33,8 @@ public class DemoGUI extends JFrame implements ActionListener {
     }
 
 
-    /**
-     * Invoked when an action occurs.
-     *
-     * @param e the event to be processed
-     */
     @Override
     public void actionPerformed(ActionEvent e) {
-        button.setText("Bye!");
-
         Graphics paper = panel.getGraphics();
         paper.setColor(Color.red);
         paper.drawLine(0, 0, 100, 100);
@@ -49,6 +42,7 @@ public class DemoGUI extends JFrame implements ActionListener {
         paper.setColor(Color.blue);
         paper.fillOval(100, 100, 40, 40);
         System.out.println("Action!");
+
 
     }
 }

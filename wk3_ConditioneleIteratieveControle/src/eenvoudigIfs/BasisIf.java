@@ -8,7 +8,7 @@ public class BasisIf {
         } else {
             System.out.println("Geen zeven");
         }
-
+        System.out.println((i==7)?"zeven":"geen zeven");
     }
 
 

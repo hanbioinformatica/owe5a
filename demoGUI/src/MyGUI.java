@@ -7,6 +7,7 @@ public class MyGUI extends JFrame implements ActionListener {
 
     JTextField field; //declaratie van een tekstveld
     JButton button;  // declaratie van button
+    JPanel panel; // declaratie van een panel om op te tekenen
 
     public static void main(String[] args) {
         MyGUI frame = new MyGUI();
@@ -29,6 +30,10 @@ public class MyGUI extends JFrame implements ActionListener {
         window.add(button);  // plaats op window
         button.addActionListener(this); // koppelen actionlistener aan button
 
+        panel = new JPanel(); // init panel
+        panel.setPreferredSize(new Dimension(300,300));
+        panel.setBackground(Color.YELLOW);
+        window.add(panel);
     }
 
     /**
@@ -38,8 +43,14 @@ public class MyGUI extends JFrame implements ActionListener {
      */
     @Override
     public void actionPerformed(ActionEvent e) {
+        Graphics paper = panel.getGraphics();
+        paper.setColor(Color.RED);
+        paper.drawLine(10,10,100,100);
+        paper.setColor(Color.BLACK);
+        paper.fillOval(200,200,20,20);
         field.setText("Hello World!");
         button.setBackground(Color.blue);
         System.out.println("Actie ");
+
     }
 }

@@ -7,6 +7,8 @@ import java.awt.event.ActionListener;
 
 public class GUI4ifs extends JFrame implements ActionListener {
 
+    int teller = 0;
+
     JTextField field; //declaratie van een tekstveld
     JLabel label;
     JButton button1, button2;  // declaratie van button
@@ -47,6 +49,23 @@ public class GUI4ifs extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        teller++;
+        System.out.println(teller);
+        System.out.println("Actie!");
+        if (e.getSource()==button1){
+            System.out.println("Button1");
+            button1.setText("kruisje");
+            button1.setEnabled(false);
+        } else {
+            System.out.println("Button2");
+            if (field.getText().equals("hello")){
+                System.out.println("Er staat hello");
+            }
+            else{
+                System.out.println("Er staat geen hello");
+            }
+        }
+
 
 
     }

@@ -9,8 +9,9 @@ public class GUI4loops extends JFrame implements ActionListener {
 
     JTextField field; //declaratie van een tekstveld
     JLabel label;
-    JButton button1, button2;  // declaratie van button
+    JButton button1;  // declaratie van button
     JPanel panel; // declaratie van een panel om op te tekenen
+    Container window;
 
     public static void main(String[] args) {
         GUI4loops frame = new GUI4loops();
@@ -21,11 +22,9 @@ public class GUI4loops extends JFrame implements ActionListener {
 
     private void createGUI(){
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        Container window = getContentPane();
+        window = getContentPane();
         window.setBackground(Color.CYAN);
         window.setLayout(new FlowLayout());
-
-
 
         field = new JTextField("Typ hier iets");  // initialisatie
         window.add(field); // plaatsen van het tekstveld in de container(window)
@@ -35,19 +34,13 @@ public class GUI4loops extends JFrame implements ActionListener {
         window.add(button1);  // plaats op window
         button1.addActionListener(this); // koppelen actionlistener aan button
 
-        button2 = new JButton("button2");  // init button
-        window.add(button2);  // plaats op window
-        button2.addActionListener(this); // koppelen actionlistener aan button
-
         label = new JLabel ("Invoer");
         window.add(label);
-
     }
 
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
 
     }
 }

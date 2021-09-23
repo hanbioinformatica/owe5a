@@ -23,7 +23,10 @@ public class DemoGUIloop extends JFrame implements ActionListener {
         Container window = getContentPane();
         window.setBackground(Color.GREEN);
         window.setLayout(new FlowLayout());
+
         button = new JButton("Klik");
+
+
 
         button.addActionListener(this);
         window.add(button);

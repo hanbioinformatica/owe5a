@@ -3,9 +3,6 @@ package AntwoordModel;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class GUI_BI5aK {
     private JTextField textField1;

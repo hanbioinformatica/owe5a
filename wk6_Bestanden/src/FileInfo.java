@@ -2,7 +2,8 @@
  *
  * @author Martijn
  */
-import java.io.*;
+
+import java.io.File;
 
 public class FileInfo {
 

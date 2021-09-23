@@ -3,11 +3,13 @@
  * and open the template in the editor.
  */
 
-import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
-import java.util.*; 
-import java.io.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class FileInputDemo extends JFrame
     implements  ActionListener {

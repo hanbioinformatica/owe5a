@@ -4,10 +4,12 @@
 // events and also loads a new page when a valid hyperlink is clicked.
 //
 
-import java.io.*;
 import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.text.html.*;
+import javax.swing.event.HyperlinkEvent;
+import javax.swing.event.HyperlinkListener;
+import javax.swing.text.html.HTMLDocument;
+import javax.swing.text.html.HTMLFrameHyperlinkEvent;
+import java.io.FileNotFoundException;
 
 public class SimpleLinkListener implements HyperlinkListener {
 

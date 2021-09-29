@@ -1,9 +1,9 @@
 package PizzaPackage;
 
-public class Pizza {
+public class Pizza extends Product {
 
     // attributen (variabelen)
-    private double prijs;
+
     private int diameter;
     private String naam;
     static int maxDiameter = 40;
@@ -20,9 +20,6 @@ public class Pizza {
         setDiameter(diameter);
     }
 
-    public double getPrijs() {
-        return prijs;
-    }
 
     public int getDiameter() {
         return diameter;
@@ -51,12 +48,6 @@ public class Pizza {
                 "cm prijs "+prijs);
     }
 
-    public void setPrijs(double p){
-        if (p>20){
-            System.out.println("Veel te duur!");
-        } else {
-            prijs = p;
-        }
-    }
+
 
 }

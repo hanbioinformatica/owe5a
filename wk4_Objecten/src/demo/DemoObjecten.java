@@ -2,29 +2,62 @@ package demo;
 
 public class DemoObjecten {
 
-    static int gl_int = 7;
-
     public static void main(String[] args) {
-        gl_int = increase(10);
-        float ret_float = increase(7.3f);
-        System.out.println(ret_float);
-        int ret_int2 = increase(5);
-        System.out.println(ret_int2);
-        int ret_int3 = increase(7, 5);
-        System.out.println(ret_int3);
+        Pokemon p1 = new Pokemon("Ivysaur", 60, 62);
+        Pokemon p2 = new Pokemon("Charizard", 78, 84);
+        Pokemon p3 = new Pokemon("Charizard", 78, 130);
+        Pokemon p4 = new Pokemon();
+        System.out.println(" 1." + Pokemon.aantal);
+        System.out.println(" 2." + p1.getNaam());
+        System.out.println(" 3." + p2.getAttack());
+        String s1 = "Charizard";
+        System.out.println(" 4." + (p3.getNaam() == s1));
+        System.out.println(" 5." + (p2.getAttack() == p3.getAttack()));
+        Pokemon p5 = p1;
+        System.out.println(" 6." + (p1 == p5));
+        System.out.println(" 7." + p4.getNaam());
+        p4.setNaam("Sandslash");
+        System.out.println(" 8." + p4.getNaam());
+        for (int i = 0; i < 7; i++) {
+            p1 = new Pokemon();
+        }
+        System.out.println(" 9." + Pokemon.aantal);
+        System.out.println("10." + p5.getId());
+    }
+}
 
+class Pokemon {
+    public static int aantal = 0;
+    private String naam;
+    private final int id;
+    private final int attack;
+    private final int defense;
+
+    public Pokemon() {
+        this("Bulbasaur", 45, 49);
     }
 
-    public static int increase (int var){
-        return ++var;
+    public Pokemon(String n, int a, int d) {
+        this.naam = n;
+        this.attack = a;
+        this.defense = d;
+        aantal++;
+        id = aantal;
     }
 
-    public static int increase (int var, int plus){
-        return var+plus;
+    public String getNaam() {
+        return naam;
     }
 
-    public static float increase (float var){
-        return ++var;
+    public void setNaam(String naam) {
+        this.naam = naam;
     }
 
+    public int getAttack() {
+        return attack;
+    }
+
+    public int getId() {
+        return id;
+    }
 }

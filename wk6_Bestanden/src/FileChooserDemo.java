@@ -7,10 +7,16 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * Programma voor het lezen van bestanden
+ * @author Martijn
+ * @Copyright 2021
+ *
+ */
 public class FileChooserDemo extends JFrame
         implements ActionListener {
 
-    private JButton openButton, saveButton;
+    private JButton openButton;
     private JFileChooser fileChooser;
     private JTextField nameField;
     private JTextArea textArea;
@@ -19,10 +25,10 @@ public class FileChooserDemo extends JFrame
     public static void main(String[] args) {
         try {
             //UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
-            //UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
+            UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
             
             //UIManager.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
-            UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+            //UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
         } catch (UnsupportedLookAndFeelException e) {
             // handle exception
         } catch (ClassNotFoundException e) {
@@ -40,6 +46,9 @@ public class FileChooserDemo extends JFrame
         frame.setVisible(true);
     }
 
+    /**
+     * Functie die blah
+     */
     private void createGUI() {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         Container window = getContentPane();
@@ -48,10 +57,6 @@ public class FileChooserDemo extends JFrame
         openButton = new JButton("open");
         window.add(openButton);
         openButton.addActionListener(this);
-
-        saveButton = new JButton("save");
-        window.add(saveButton);
-        saveButton.addActionListener(this);
 
         nameField = new JTextField(25);
         window.add(nameField);
@@ -81,25 +86,20 @@ public class FileChooserDemo extends JFrame
     public void actionPerformed(ActionEvent event) {
         File selectedFile;
         int reply;
-        if (event.getSource() == saveButton) {
-            fileChooser = new JFileChooser();
-            reply = fileChooser.showSaveDialog(this);
-            if (reply == JFileChooser.APPROVE_OPTION) {
-                selectedFile = fileChooser.getSelectedFile();
-                nameField.setText(selectedFile.getAbsolutePath());
-            }
-        }
-        if (event.getSource() == openButton) {
             fileChooser = new JFileChooser();
             reply = fileChooser.showOpenDialog(this);
-            if (reply == JFileChooser.APPROVE_OPTION) {
+            if (reply == 0) {
                 selectedFile = fileChooser.getSelectedFile();
                 nameField.setText(selectedFile.getAbsolutePath());
                 readFile();
             }
+            if (reply==1){
+                textArea.setText("Geen bestand gekozen");
+                textArea.setBackground(Color.RED);
+            }
         }
     }
-}
+
 
 
 

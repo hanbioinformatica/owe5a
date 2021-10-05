@@ -1,7 +1,7 @@
 package PizzaPackage;
 
 public class Product {
-    private double prijs;
+    protected double prijs;
 
     public double getPrijs() {
         return prijs;

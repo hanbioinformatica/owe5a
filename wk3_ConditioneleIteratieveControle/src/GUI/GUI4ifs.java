@@ -16,17 +16,16 @@ public class GUI4ifs extends JFrame implements ActionListener {
 
     public static void main(String[] args) {
         GUI4ifs frame = new GUI4ifs();
-        frame.setSize(400,400);
+        frame.setSize(400, 400);
         frame.createGUI();
         frame.setVisible(true);
     }
 
-    private void createGUI(){
+    private void createGUI() {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         Container window = getContentPane();
         window.setBackground(Color.CYAN);
         window.setLayout(new FlowLayout());
-
 
 
         field = new JTextField("Typ hier iets");  // initialisatie
@@ -41,7 +40,7 @@ public class GUI4ifs extends JFrame implements ActionListener {
         window.add(button2);  // plaats op window
         button2.addActionListener(this); // koppelen actionlistener aan button
 
-        label = new JLabel ("Invoer");
+        label = new JLabel("Invoer");
         window.add(label);
 
     }
@@ -52,18 +51,26 @@ public class GUI4ifs extends JFrame implements ActionListener {
         teller++;
         System.out.println(teller);
         System.out.println("Actie!");
-        if (e.getSource()==button1){
+        if (e.getSource() == button1) {
             System.out.println("Button1");
             button1.setText("kruisje");
             button1.setEnabled(false);
         } else {
             System.out.println("Button2");
-            if (field.getText().equals("hello")){
+            if (field.getText().equals("hello")) {
                 System.out.println("Er staat hello");
-            }
-            else{
+            } else {
                 System.out.println("Er staat geen hello");
             }
+        }
+        try {
+            int i = Integer.parseInt(field.getText());
+            int j = 7/i;
+            label.setText(Integer.toString(i));
+        } catch (NumberFormatException err) {
+            label.setText("Foute invoer");
+        } catch (ArithmeticException err2){
+            label.setText("Deling door 0");
         }
 
 

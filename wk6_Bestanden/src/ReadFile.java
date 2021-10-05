@@ -18,11 +18,15 @@ public class ReadFile {
 
 
             String line;
-            inFile = new BufferedReader(new FileReader(bestand));
-            while ((line = inFile.readLine()) != null) {
-                System.out.println(line + "\n");
+            try {
+                inFile = new BufferedReader(new FileReader(bestand));
+                while ((line = inFile.readLine()) != null) {
+                    System.out.println(line + "\n");
+                }
+                inFile.close();
+            } catch (IOException naam_voor_exception){
+                System.out.println("Bestand niet gevonden!");
+                System.out.println(naam_voor_exception.getMessage());
             }
-            inFile.close();
-
     }
 }

@@ -1,6 +1,8 @@
 package PizzaPackage;
 
-public class Pizza extends Product {
+import Product.Product;
+
+public  class Pizza extends Product {
 
     // attributen (variabelen)
 
@@ -10,13 +12,18 @@ public class Pizza extends Product {
 
     // constructor
     // default no-args do nothing
-    public Pizza(){
+   public Pizza(){
         System.out.println("Call van constr");
     }
 
+
     public Pizza (String naam,double prijs, int diameter){
         setNaam(naam);
-        setPrijs(prijs);
+        try {
+            setPrijs(prijs);
+        } catch (ProductTeDuur e) {
+            e.printStackTrace();
+        }
         setDiameter(diameter);
     }
 
@@ -48,6 +55,8 @@ public class Pizza extends Product {
                 "cm prijs "+prijs);
     }
 
+    @Override
+    public void setPrijs(double p) throws ProductTeDuur {
 
-
+    }
 }

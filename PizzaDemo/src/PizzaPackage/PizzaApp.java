@@ -1,5 +1,7 @@
 package PizzaPackage;
 
+import Product.Product;
+
 public class PizzaApp {
 
     public static void main(String[] args) {
@@ -12,6 +14,8 @@ public class PizzaApp {
         p1.getInfo();
         p2.getInfo();
         p3.getInfo();
+
+
 
         //System.out.println(Pizza.maxDiameter);
         //int array decl //initialisatie

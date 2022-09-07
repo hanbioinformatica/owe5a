@@ -36,11 +36,6 @@ public class MyGUI extends JFrame implements ActionListener {
         window.add(panel);
     }
 
-    /**
-     * Invoked when an action occurs.
-     *
-     * @param e the event to be processed
-     */
     @Override
     public void actionPerformed(ActionEvent e) {
         Graphics paper = panel.getGraphics();

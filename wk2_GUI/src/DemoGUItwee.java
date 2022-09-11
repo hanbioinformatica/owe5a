@@ -14,6 +14,7 @@ public class DemoGUItwee extends JFrame implements ActionListener {
         frame.setSize(400, 400);
         frame.createGUI();
         frame.setVisible(true);
+
     }
 
     private void createGUI() {

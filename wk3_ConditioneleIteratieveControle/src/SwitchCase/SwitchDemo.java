@@ -8,43 +8,43 @@ public class SwitchDemo {
         switch (month) {
             case 1:
                 System.out.println("January");
-                //break;
+                break;
             case 2:
                 System.out.println("February");
-                //break;
+                break;
             case 3:
                 System.out.println("March");
-                //break;
+                break;
             case 4:
                 System.out.println("April");
-                //break;
+                break;
             case 5:
                 System.out.println("May");
-                //break;
+                break;
             case 6:
                 System.out.println("June");
-                //break;
+                break;
             case 7:
                 System.out.println("July");
-                //break;
+                break;
             case 8:
                 System.out.println("August");
-                //break;
+                break;
             case 9:
                 System.out.println("September");
-                //break;
+                break;
             case 10:
                 System.out.println("October");
-                //break;
+                break;
             case 11:
                 System.out.println("November");
-                //break;
+                break;
             case 12:
                 System.out.println("December");
-                //break;
+                break;
             default:
                 System.out.println("Invalid month");
-                //break;
+                break;
         }
 
     }

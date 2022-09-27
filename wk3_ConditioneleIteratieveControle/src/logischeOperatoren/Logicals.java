@@ -3,14 +3,11 @@ package logischeOperatoren;
 public class Logicals {
 
     public static void main(String[] args) {
-        int i = 7;
-        int j = 5;
-        if (i > 3 | j++ < 7) {
-            System.out.println("Hello");
-        } else {
-            System.out.println("World");
-        }
-        System.out.println(j);
-
+      int a = 0;
+      for (int i=0;i<10;i++){
+          System.out.println(i);
+          a++;
+      }
+        System.out.println(a);
     }
 }

@@ -3,7 +3,7 @@ package SwitchCase;
 public class SwitchCaseDemo {
 
     public static void main(String[] args) {
-        int i = 7;
+        int i = 2;
         switch (i) {
             case 1:
                 System.out.println("een");

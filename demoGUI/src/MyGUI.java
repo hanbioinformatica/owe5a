@@ -11,12 +11,12 @@ public class MyGUI extends JFrame implements ActionListener {
 
     public static void main(String[] args) {
         MyGUI frame = new MyGUI();
-        frame.setSize(400,400);
+        frame.setSize(400, 400);
         frame.createGUI();
         frame.setVisible(true);
     }
 
-    private void createGUI(){
+    private void createGUI() {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         Container window = getContentPane();
         window.setBackground(Color.CYAN);
@@ -31,7 +31,7 @@ public class MyGUI extends JFrame implements ActionListener {
         button.addActionListener(this); // koppelen actionlistener aan button
 
         panel = new JPanel(); // init panel
-        panel.setPreferredSize(new Dimension(300,300));
+        panel.setPreferredSize(new Dimension(300, 300));
         panel.setBackground(Color.YELLOW);
         window.add(panel);
     }
@@ -40,9 +40,9 @@ public class MyGUI extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         Graphics paper = panel.getGraphics();
         paper.setColor(Color.RED);
-        paper.drawLine(10,10,100,100);
+        paper.drawLine(10, 10, 100, 100);
         paper.setColor(Color.BLACK);
-        paper.fillOval(200,200,20,20);
+        paper.fillOval(200, 200, 20, 20);
         field.setText("Hello World!");
         button.setBackground(Color.blue);
         System.out.println("Actie ");

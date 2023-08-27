@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BI5a-K_2020/BI5a-K_2020.iml" filepath="$PROJECT_DIR$/BI5a-K_2020/BI5a-K_2020.iml" />
       <module fileurl="file://$PROJECT_DIR$/Bi5a-K_2019/Bi5a-K_2019.iml" filepath="$PROJECT_DIR$/Bi5a-K_2019/Bi5a-K_2019.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bi5a-K_2122/Bi5a-K_2122.iml" filepath="$PROJECT_DIR$/Bi5a-K_2122/Bi5a-K_2122.iml" />
       <module fileurl="file://$PROJECT_DIR$/GUImodule/GUImodule.iml" filepath="$PROJECT_DIR$/GUImodule/GUImodule.iml" />
       <module fileurl="file://$PROJECT_DIR$/PizzaDemo/PizzaDemo.iml" filepath="$PROJECT_DIR$/PizzaDemo/PizzaDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/demoGUI/demoGUI.iml" filepath="$PROJECT_DIR$/demoGUI/demoGUI.iml" />

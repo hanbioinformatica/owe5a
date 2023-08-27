@@ -23,11 +23,11 @@ public class KahootVraag2 {
     }
 
     public static void main(String args[]) {
-        //peptideChecker("GTA5");
-//        peptideChecker("GTAV");
-//        peptideChecker("GTAZ");
-//        peptideChecker("GTAZY5");
-        peptideChecker(null);
+//          peptideChecker("GTA5");
+//          peptideChecker("GTAV");
+//          peptideChecker("GTAZ");
+          //peptideChecker("GOZT5");
+       // peptideChecker(null);
 
 
 

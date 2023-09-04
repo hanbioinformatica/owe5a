@@ -6,8 +6,6 @@ public class VarDemo {
     public static void main(String[] args) {
         String een = " Hello";
         System.out.println("Hello World!".toUpperCase().replace("L","C").toLowerCase());
-
-
     }
 
 }

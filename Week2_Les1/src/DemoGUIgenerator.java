@@ -13,6 +13,7 @@ public class DemoGUIgenerator {
     private JButton dwkjfekhrwaButton;
     private JTextArea textArea1;
     private JCheckBox checkBox1;
+    private JCheckBox checkBox2;
     private JTextField textField2;
 
     public DemoGUIgenerator() {

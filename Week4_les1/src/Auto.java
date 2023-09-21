@@ -1,12 +1,34 @@
 public class Auto {
-    String kleur;
-     String eigenaar;
+
+    public static final int MAXSNELHEID = 130;
+    public static int aantalAutoos = 0;
+
+    private String kleur;
+
+    public String getKleur() {
+        return kleur;
+    }
+
+    public void setKleur(String kleur) {
+        this.kleur = kleur;
+    }
+
+    public String getEigenaar() {
+        return eigenaar;
+    }
+
+    public void setEigenaar(String eigenaar) {
+        this.eigenaar = eigenaar;
+        aantalAutoos++;
+    }
+
+    private String eigenaar;
     private int snelheid;
 
     void setSnelheid(int i){
-        if (i>130){
+        if (i>MAXSNELHEID){
             System.out.println("Dat mag niet, limiet op 130");
-            snelheid = 130;
+            snelheid = MAXSNELHEID;
         } else {
         snelheid = i;
         }
